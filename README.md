@@ -15,6 +15,10 @@ import {
   S3Destination,
   SalesforceConnectorProfile,
   SalesforceSource,
+  Transform,
+  Validation,
+  ValidationAction,
+  ValidationCondition,
 } from '../src';
 
 const profile = new SalesforceConnectorProfile(this, 'MyConnectorProfile', {
