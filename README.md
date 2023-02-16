@@ -83,7 +83,3 @@ Operations are collections of AppFlow tasks that are required to obtain a concre
 ## Filters
 
 ## Validations
-
-# Thoughts
-
-- should we even be allowing for strings as profiles, keys, secrets? This makes typing more difficult. Maybe we should stick with interfaces + require reliance on `fromXXX` ?
