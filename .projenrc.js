@@ -6,7 +6,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   cdkVersion: '2.55.1',
   defaultReleaseBranch: 'main',
   name: 'appflow-cdk',
-  repositoryUrl: 'git@ssh.gitlab.aws.dev:rpawlasz/appflow-cdk.git',
+  repositoryUrl: 'git@github.com:rpawlaszek/appflow-cdk.git',
   stability: Stability.EXPERIMENTAL,
   docgen: true,
   peerDeps: [
