@@ -18,14 +18,14 @@ const project = new awscdk.AwsCdkConstructLibrary({
     'appflow',
     'cdk',
   ],
-  publishToPypi: {
-    distName: 'appflow-cdk',
-    module: 'appflow-cdk',
-  },
-  publishToNuget: {
-    dotNetNamespace: 'AppFlow.CDK',
-    packageId: 'AppFlow.CDK',
-  },
+  // publishToPypi: {
+  //   distName: 'appflow-cdk',
+  //   module: 'appflow-cdk',
+  // },
+  // publishToNuget: {
+  //   dotNetNamespace: 'AppFlow.CDK',
+  //   packageId: 'AppFlow.CDK',
+  // },
   gitignore: [
     '*.rest',
   ],

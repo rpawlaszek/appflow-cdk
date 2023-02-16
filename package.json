@@ -2,7 +2,7 @@
   "name": "appflow-cdk",
   "repository": {
     "type": "git",
-    "url": "git@ssh.gitlab.aws.dev:rpawlasz/appflow-cdk.git"
+    "url": "git@github.com:rpawlaszek/appflow-cdk.git"
   },
   "scripts": {
     "build": "npx projen build",
@@ -47,9 +47,7 @@
     "integ:snapshot-all": "npx projen integ:snapshot-all",
     "package": "npx projen package",
     "package-all": "npx projen package-all",
-    "package:dotnet": "npx projen package:dotnet",
     "package:js": "npx projen package:js",
-    "package:python": "npx projen package:python",
     "post-compile": "npx projen post-compile",
     "post-upgrade": "npx projen post-upgrade",
     "pre-compile": "npx projen pre-compile",
@@ -152,16 +150,7 @@
   "stability": "experimental",
   "jsii": {
     "outdir": "dist",
-    "targets": {
-      "python": {
-        "distName": "appflow-cdk",
-        "module": "appflow-cdk"
-      },
-      "dotnet": {
-        "namespace": "AppFlow.CDK",
-        "packageId": "AppFlow.CDK"
-      }
-    },
+    "targets": {},
     "tsc": {
       "outDir": "lib",
       "rootDir": "src"
