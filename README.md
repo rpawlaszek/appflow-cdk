@@ -47,6 +47,12 @@ new OnDemandFlow(this, 'SfAccountToS3', {
   source: source,
   destination: destination,
   mappings: [Mapping.mapAll()],
+  transforms: [
+    Transform.mask({ name: 'Name' }, '*'),
+  ],
+  validations: [
+    Validation.when(ValidationCondition.isNull('Name'), ValidationAction.ignoreRecord()),
+  ],
   filters: [
     Filter.when(FilterCondition.timestampLessThanEquals({ name: 'LastModifiedDate', dataType: 'datetime' }, new Date(Date.parse('2022-02-02')))),
   ],
