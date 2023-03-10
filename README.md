@@ -22,18 +22,17 @@ import {
 } from '../src';
 
 const profile = new SalesforceConnectorProfile(this, 'MyConnectorProfile', {
-  credentials: {
-    oAuth: {
-      clientCredentials: {
-        accessToken: <accessToken>
+  oAuth: {
+    accessToken: <accessToken>,
+    flows: {
+      refreshTokenGrant: {
         refreshToken: <refreshToken>,
+        client: <clientSecret>,
       },
     },
   },
-  properties: {
-    instanceUrl: <instanceUrl>,
-    isSandbox: false,
-  },
+  instanceUrl: <instanceUrl>,
+  isSandbox: false,
 });
 
 const source = new SalesforceSource({
