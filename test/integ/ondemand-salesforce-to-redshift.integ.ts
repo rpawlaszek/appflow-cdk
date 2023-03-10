@@ -22,18 +22,16 @@ const stack = new Stack(app, 'TestStack');
 const creds = Secret.fromSecretNameV2(stack, 'TestSecret', 'appflow/salesforce');
 
 const profile = new SalesforceConnectorProfile(stack, 'TestProfile', {
-  credentials: {
-    oAuth: {
-      refreshToken: {
-        accessToken: creds.secretValueFromJson('accessToken').toString(),
+  oAuth: {
+    accessToken: creds.secretValueFromJson('accessToken').toString(),
+    flows: {
+      refreshTokenGrant: {
         refreshToken: creds.secretValueFromJson('refreshToken').toString(),
       },
     },
   },
-  properties: {
-    instanceUrl: creds.secretValueFromJson('instanceUrl').toString(),
-    isSandbox: false,
-  },
+  instanceUrl: creds.secretValueFromJson('instanceUrl').toString(),
+  isSandbox: false,
 });
 
 const source = new SalesforceSource({

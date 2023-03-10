@@ -5,8 +5,9 @@ import { ConnectorProfileBase, ConnectorProfileProps } from '../core/connectors/
 import { ConnectorType } from '../core/connectors/connector-type';
 
 export interface SalesforceConnectorProfileProps extends ConnectorProfileProps {
-  readonly credentials: SalesforceConnectorCredentials;
-  readonly properties: SalesforceConnectorProperties;
+  readonly oAuth: SalesforceOAuthSettings;
+  readonly instanceUrl: string;
+  readonly isSandbox: boolean;
 }
 
 // export interface SalesforceOAuthClientCredentialsFlowClientSettings {
@@ -22,23 +23,18 @@ export interface SalesforceConnectorProfileProps extends ConnectorProfileProps {
 
 // TODO: think of naming. Maybe it should be named `tokenBased` ? It's not clientCredentials actually
 export interface SalesforceOAuthRefreshTokenGrantFlowSettings {
-  readonly accessToken?: string;
   readonly refreshToken?: string;
   // TODO: Describe when it is necessary
   readonly client?: ISecret;// | SalesforceOAuthClientCredentialsFlowClientSettings;
 }
 
+export interface SalesforceOAuthFlows {
+  readonly refreshTokenGrant: SalesforceOAuthRefreshTokenGrantFlowSettings;
+}
+
 export interface SalesforceOAuthSettings {
-  readonly refreshToken: SalesforceOAuthRefreshTokenGrantFlowSettings;
-}
-
-export interface SalesforceConnectorCredentials {
-  readonly oAuth: SalesforceOAuthSettings;
-}
-
-export interface SalesforceConnectorProperties {
-  readonly isSandbox: boolean;
-  readonly instanceUrl: string;
+  readonly accessToken?: string;
+  readonly flows?: SalesforceOAuthFlows;
 }
 
 export class SalesforceConnectorProfile extends ConnectorProfileBase {
@@ -53,15 +49,15 @@ export class SalesforceConnectorProfile extends ConnectorProfileBase {
 
   constructor(scope: Construct, id: string, props: SalesforceConnectorProfileProps) {
     super(scope, id, props, ConnectorType.salesforce);
-    this.tryAddNodeDependency(this, props.credentials.oAuth.refreshToken.client);
+    this.tryAddNodeDependency(this, props.oAuth.flows?.refreshTokenGrant.client);
   }
 
   protected buildConnectorProfileProperties(properties: ConnectorProfileProps): CfnConnectorProfile.ConnectorProfilePropertiesProperty {
     const props = properties as SalesforceConnectorProfileProps;
     return {
       salesforce: {
-        isSandboxEnvironment: props.properties.isSandbox,
-        instanceUrl: props.properties.instanceUrl,
+        isSandboxEnvironment: props.isSandbox,
+        instanceUrl: props.instanceUrl,
       },
     };
   }
@@ -71,11 +67,11 @@ export class SalesforceConnectorProfile extends ConnectorProfileBase {
 
     let salesforce: { [key: string]: any } = {};
 
-    salesforce.accessToken = props.credentials.oAuth.refreshToken.accessToken;
-    salesforce.refreshToken = props.credentials.oAuth.refreshToken.refreshToken;
+    salesforce.accessToken = props.oAuth.accessToken;
+    salesforce.refreshToken = props.oAuth.flows?.refreshTokenGrant.refreshToken;
 
-    if (props.credentials.oAuth.refreshToken.client) {
-      salesforce.clientCredentialsArn = props.credentials.oAuth.refreshToken.client.secretArn;
+    if (props.oAuth.flows?.refreshTokenGrant.client) {
+      salesforce.clientCredentialsArn = props.oAuth.flows.refreshTokenGrant.client.secretArn;
       // TODO: make sure why this doesn't work.
       //       this doc says it should: https://docs.aws.amazon.com/appflow/latest/userguide/salesforce.html
       //       in order to obtain the access token I needed to follow: https://medium.com/@bpmmendis94/obtain-access-refresh-tokens-from-salesforce-rest-api-a324fe4ccd9b

@@ -18,6 +18,7 @@ export class ConnectorType {
     };
   }
   //   public static get googleanalytics(): ConnectorType { return new ConnectorType('GoogleAnalytics', false); }
+  public static get googleanalytics4(): ConnectorType { return new ConnectorType('GoogleAnalytics4', true); }
   //   public static get infornexus(): ConnectorType { return new ConnectorType('InforNexus', false); }
   public static get marketo(): ConnectorType { return new ConnectorType('Marketo', false); }
   public static get redshift(): ConnectorType { return new ConnectorType('Redshift', false); }
@@ -39,6 +40,7 @@ export class ConnectorType {
   public static get servicenow(): ConnectorType { return new ConnectorType('ServiceNow', false); }
   //   public static get singular(): ConnectorType { return new ConnectorType('Singular', false); }
   public static get slack(): ConnectorType { return new ConnectorType('Slack', false); }
+  public static get snowflake(): ConnectorType { return new ConnectorType('Snowflake', false); }
   //   public static get trendmicro(): ConnectorType { return new ConnectorType('Trendmicro', false); }
   //   public static get veeva(): ConnectorType { return new ConnectorType('Veeva', false); }
   public static get zendesk(): ConnectorType { return new ConnectorType('Zendesk', false); }

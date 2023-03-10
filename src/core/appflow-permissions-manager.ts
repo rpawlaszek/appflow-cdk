@@ -8,6 +8,7 @@ import { ISecret } from 'aws-cdk-lib/aws-secretsmanager';
 const glob = global as any;
 
 /**
+ * see: https://docs.aws.amazon.com/appflow/latest/userguide/salesforce.html#salesforce-setup
  * @internal
  */
 export class AppFlowPermissionsManager {

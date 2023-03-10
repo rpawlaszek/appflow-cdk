@@ -503,6 +503,282 @@ public readonly type: FlowType;
 ---
 
 
+### GoogleAnalytics4ConnectorProfile <a name="GoogleAnalytics4ConnectorProfile" id="appflow-cdk.GoogleAnalytics4ConnectorProfile"></a>
+
+#### Initializers <a name="Initializers" id="appflow-cdk.GoogleAnalytics4ConnectorProfile.Initializer"></a>
+
+```typescript
+import { GoogleAnalytics4ConnectorProfile } from 'appflow-cdk'
+
+new GoogleAnalytics4ConnectorProfile(scope: Construct, id: string, props: GoogleAnalytics4ConnectorProfileProps)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#appflow-cdk.GoogleAnalytics4ConnectorProfile.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | *No description.* |
+| <code><a href="#appflow-cdk.GoogleAnalytics4ConnectorProfile.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#appflow-cdk.GoogleAnalytics4ConnectorProfile.Initializer.parameter.props">props</a></code> | <code><a href="#appflow-cdk.GoogleAnalytics4ConnectorProfileProps">GoogleAnalytics4ConnectorProfileProps</a></code> | *No description.* |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="appflow-cdk.GoogleAnalytics4ConnectorProfile.Initializer.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="appflow-cdk.GoogleAnalytics4ConnectorProfile.Initializer.parameter.id"></a>
+
+- *Type:* string
+
+---
+
+##### `props`<sup>Required</sup> <a name="props" id="appflow-cdk.GoogleAnalytics4ConnectorProfile.Initializer.parameter.props"></a>
+
+- *Type:* <a href="#appflow-cdk.GoogleAnalytics4ConnectorProfileProps">GoogleAnalytics4ConnectorProfileProps</a>
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#appflow-cdk.GoogleAnalytics4ConnectorProfile.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#appflow-cdk.GoogleAnalytics4ConnectorProfile.applyRemovalPolicy">applyRemovalPolicy</a></code> | Apply the given removal policy to this resource. |
+
+---
+
+##### `toString` <a name="toString" id="appflow-cdk.GoogleAnalytics4ConnectorProfile.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Returns a string representation of this construct.
+
+##### `applyRemovalPolicy` <a name="applyRemovalPolicy" id="appflow-cdk.GoogleAnalytics4ConnectorProfile.applyRemovalPolicy"></a>
+
+```typescript
+public applyRemovalPolicy(policy: RemovalPolicy): void
+```
+
+Apply the given removal policy to this resource.
+
+The Removal Policy controls what happens to this resource when it stops
+being managed by CloudFormation, either because you've removed it from the
+CDK application or because you've made a change that requires the resource
+to be replaced.
+
+The resource can be deleted (`RemovalPolicy.DESTROY`), or left in your AWS
+account for data recovery and cleanup later (`RemovalPolicy.RETAIN`).
+
+###### `policy`<sup>Required</sup> <a name="policy" id="appflow-cdk.GoogleAnalytics4ConnectorProfile.applyRemovalPolicy.parameter.policy"></a>
+
+- *Type:* aws-cdk-lib.RemovalPolicy
+
+---
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#appflow-cdk.GoogleAnalytics4ConnectorProfile.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#appflow-cdk.GoogleAnalytics4ConnectorProfile.isOwnedResource">isOwnedResource</a></code> | Returns true if the construct was created by CDK, and false otherwise. |
+| <code><a href="#appflow-cdk.GoogleAnalytics4ConnectorProfile.isResource">isResource</a></code> | Check whether the given construct is a Resource. |
+| <code><a href="#appflow-cdk.GoogleAnalytics4ConnectorProfile.fromConnectionProfileArn">fromConnectionProfileArn</a></code> | *No description.* |
+| <code><a href="#appflow-cdk.GoogleAnalytics4ConnectorProfile.fromConnectionProfileName">fromConnectionProfileName</a></code> | *No description.* |
+
+---
+
+##### ~~`isConstruct`~~ <a name="isConstruct" id="appflow-cdk.GoogleAnalytics4ConnectorProfile.isConstruct"></a>
+
+```typescript
+import { GoogleAnalytics4ConnectorProfile } from 'appflow-cdk'
+
+GoogleAnalytics4ConnectorProfile.isConstruct(x: any)
+```
+
+Checks if `x` is a construct.
+
+###### `x`<sup>Required</sup> <a name="x" id="appflow-cdk.GoogleAnalytics4ConnectorProfile.isConstruct.parameter.x"></a>
+
+- *Type:* any
+
+Any object.
+
+---
+
+##### `isOwnedResource` <a name="isOwnedResource" id="appflow-cdk.GoogleAnalytics4ConnectorProfile.isOwnedResource"></a>
+
+```typescript
+import { GoogleAnalytics4ConnectorProfile } from 'appflow-cdk'
+
+GoogleAnalytics4ConnectorProfile.isOwnedResource(construct: IConstruct)
+```
+
+Returns true if the construct was created by CDK, and false otherwise.
+
+###### `construct`<sup>Required</sup> <a name="construct" id="appflow-cdk.GoogleAnalytics4ConnectorProfile.isOwnedResource.parameter.construct"></a>
+
+- *Type:* constructs.IConstruct
+
+---
+
+##### `isResource` <a name="isResource" id="appflow-cdk.GoogleAnalytics4ConnectorProfile.isResource"></a>
+
+```typescript
+import { GoogleAnalytics4ConnectorProfile } from 'appflow-cdk'
+
+GoogleAnalytics4ConnectorProfile.isResource(construct: IConstruct)
+```
+
+Check whether the given construct is a Resource.
+
+###### `construct`<sup>Required</sup> <a name="construct" id="appflow-cdk.GoogleAnalytics4ConnectorProfile.isResource.parameter.construct"></a>
+
+- *Type:* constructs.IConstruct
+
+---
+
+##### `fromConnectionProfileArn` <a name="fromConnectionProfileArn" id="appflow-cdk.GoogleAnalytics4ConnectorProfile.fromConnectionProfileArn"></a>
+
+```typescript
+import { GoogleAnalytics4ConnectorProfile } from 'appflow-cdk'
+
+GoogleAnalytics4ConnectorProfile.fromConnectionProfileArn(scope: Construct, id: string, arn: string)
+```
+
+###### `scope`<sup>Required</sup> <a name="scope" id="appflow-cdk.GoogleAnalytics4ConnectorProfile.fromConnectionProfileArn.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+---
+
+###### `id`<sup>Required</sup> <a name="id" id="appflow-cdk.GoogleAnalytics4ConnectorProfile.fromConnectionProfileArn.parameter.id"></a>
+
+- *Type:* string
+
+---
+
+###### `arn`<sup>Required</sup> <a name="arn" id="appflow-cdk.GoogleAnalytics4ConnectorProfile.fromConnectionProfileArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `fromConnectionProfileName` <a name="fromConnectionProfileName" id="appflow-cdk.GoogleAnalytics4ConnectorProfile.fromConnectionProfileName"></a>
+
+```typescript
+import { GoogleAnalytics4ConnectorProfile } from 'appflow-cdk'
+
+GoogleAnalytics4ConnectorProfile.fromConnectionProfileName(scope: Construct, id: string, name: string)
+```
+
+###### `scope`<sup>Required</sup> <a name="scope" id="appflow-cdk.GoogleAnalytics4ConnectorProfile.fromConnectionProfileName.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+---
+
+###### `id`<sup>Required</sup> <a name="id" id="appflow-cdk.GoogleAnalytics4ConnectorProfile.fromConnectionProfileName.parameter.id"></a>
+
+- *Type:* string
+
+---
+
+###### `name`<sup>Required</sup> <a name="name" id="appflow-cdk.GoogleAnalytics4ConnectorProfile.fromConnectionProfileName.parameter.name"></a>
+
+- *Type:* string
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#appflow-cdk.GoogleAnalytics4ConnectorProfile.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#appflow-cdk.GoogleAnalytics4ConnectorProfile.property.env">env</a></code> | <code>aws-cdk-lib.ResourceEnvironment</code> | The environment this resource belongs to. |
+| <code><a href="#appflow-cdk.GoogleAnalytics4ConnectorProfile.property.stack">stack</a></code> | <code>aws-cdk-lib.Stack</code> | The stack in which this resource is defined. |
+| <code><a href="#appflow-cdk.GoogleAnalytics4ConnectorProfile.property.arn">arn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#appflow-cdk.GoogleAnalytics4ConnectorProfile.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#appflow-cdk.GoogleAnalytics4ConnectorProfile.property.credentials">credentials</a></code> | <code>aws-cdk-lib.aws_secretsmanager.ISecret</code> | *No description.* |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="appflow-cdk.GoogleAnalytics4ConnectorProfile.property.node"></a>
+
+```typescript
+public readonly node: Node;
+```
+
+- *Type:* constructs.Node
+
+The tree node.
+
+---
+
+##### `env`<sup>Required</sup> <a name="env" id="appflow-cdk.GoogleAnalytics4ConnectorProfile.property.env"></a>
+
+```typescript
+public readonly env: ResourceEnvironment;
+```
+
+- *Type:* aws-cdk-lib.ResourceEnvironment
+
+The environment this resource belongs to.
+
+For resources that are created and managed by the CDK
+(generally, those created by creating new class instances like Role, Bucket, etc.),
+this is always the same as the environment of the stack they belong to;
+however, for imported resources
+(those obtained from static methods like fromRoleArn, fromBucketName, etc.),
+that might be different than the stack they were imported into.
+
+---
+
+##### `stack`<sup>Required</sup> <a name="stack" id="appflow-cdk.GoogleAnalytics4ConnectorProfile.property.stack"></a>
+
+```typescript
+public readonly stack: Stack;
+```
+
+- *Type:* aws-cdk-lib.Stack
+
+The stack in which this resource is defined.
+
+---
+
+##### `arn`<sup>Required</sup> <a name="arn" id="appflow-cdk.GoogleAnalytics4ConnectorProfile.property.arn"></a>
+
+```typescript
+public readonly arn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="appflow-cdk.GoogleAnalytics4ConnectorProfile.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `credentials`<sup>Optional</sup> <a name="credentials" id="appflow-cdk.GoogleAnalytics4ConnectorProfile.property.credentials"></a>
+
+```typescript
+public readonly credentials: ISecret;
+```
+
+- *Type:* aws-cdk-lib.aws_secretsmanager.ISecret
+
+---
+
+
 ### MarketoConnectorProfile <a name="MarketoConnectorProfile" id="appflow-cdk.MarketoConnectorProfile"></a>
 
 #### Initializers <a name="Initializers" id="appflow-cdk.MarketoConnectorProfile.Initializer"></a>
@@ -3302,6 +3578,293 @@ public readonly credentials: ISecret;
 ---
 
 
+### SnowflakeConnectorProfile <a name="SnowflakeConnectorProfile" id="appflow-cdk.SnowflakeConnectorProfile"></a>
+
+#### Initializers <a name="Initializers" id="appflow-cdk.SnowflakeConnectorProfile.Initializer"></a>
+
+```typescript
+import { SnowflakeConnectorProfile } from 'appflow-cdk'
+
+new SnowflakeConnectorProfile(scope: Construct, id: string, props: SnowflakeConnectorProfileProps)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#appflow-cdk.SnowflakeConnectorProfile.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | *No description.* |
+| <code><a href="#appflow-cdk.SnowflakeConnectorProfile.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#appflow-cdk.SnowflakeConnectorProfile.Initializer.parameter.props">props</a></code> | <code><a href="#appflow-cdk.SnowflakeConnectorProfileProps">SnowflakeConnectorProfileProps</a></code> | *No description.* |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="appflow-cdk.SnowflakeConnectorProfile.Initializer.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="appflow-cdk.SnowflakeConnectorProfile.Initializer.parameter.id"></a>
+
+- *Type:* string
+
+---
+
+##### `props`<sup>Required</sup> <a name="props" id="appflow-cdk.SnowflakeConnectorProfile.Initializer.parameter.props"></a>
+
+- *Type:* <a href="#appflow-cdk.SnowflakeConnectorProfileProps">SnowflakeConnectorProfileProps</a>
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#appflow-cdk.SnowflakeConnectorProfile.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#appflow-cdk.SnowflakeConnectorProfile.applyRemovalPolicy">applyRemovalPolicy</a></code> | Apply the given removal policy to this resource. |
+
+---
+
+##### `toString` <a name="toString" id="appflow-cdk.SnowflakeConnectorProfile.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Returns a string representation of this construct.
+
+##### `applyRemovalPolicy` <a name="applyRemovalPolicy" id="appflow-cdk.SnowflakeConnectorProfile.applyRemovalPolicy"></a>
+
+```typescript
+public applyRemovalPolicy(policy: RemovalPolicy): void
+```
+
+Apply the given removal policy to this resource.
+
+The Removal Policy controls what happens to this resource when it stops
+being managed by CloudFormation, either because you've removed it from the
+CDK application or because you've made a change that requires the resource
+to be replaced.
+
+The resource can be deleted (`RemovalPolicy.DESTROY`), or left in your AWS
+account for data recovery and cleanup later (`RemovalPolicy.RETAIN`).
+
+###### `policy`<sup>Required</sup> <a name="policy" id="appflow-cdk.SnowflakeConnectorProfile.applyRemovalPolicy.parameter.policy"></a>
+
+- *Type:* aws-cdk-lib.RemovalPolicy
+
+---
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#appflow-cdk.SnowflakeConnectorProfile.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#appflow-cdk.SnowflakeConnectorProfile.isOwnedResource">isOwnedResource</a></code> | Returns true if the construct was created by CDK, and false otherwise. |
+| <code><a href="#appflow-cdk.SnowflakeConnectorProfile.isResource">isResource</a></code> | Check whether the given construct is a Resource. |
+| <code><a href="#appflow-cdk.SnowflakeConnectorProfile.fromConnectionProfileArn">fromConnectionProfileArn</a></code> | *No description.* |
+| <code><a href="#appflow-cdk.SnowflakeConnectorProfile.fromConnectionProfileName">fromConnectionProfileName</a></code> | *No description.* |
+
+---
+
+##### ~~`isConstruct`~~ <a name="isConstruct" id="appflow-cdk.SnowflakeConnectorProfile.isConstruct"></a>
+
+```typescript
+import { SnowflakeConnectorProfile } from 'appflow-cdk'
+
+SnowflakeConnectorProfile.isConstruct(x: any)
+```
+
+Checks if `x` is a construct.
+
+###### `x`<sup>Required</sup> <a name="x" id="appflow-cdk.SnowflakeConnectorProfile.isConstruct.parameter.x"></a>
+
+- *Type:* any
+
+Any object.
+
+---
+
+##### `isOwnedResource` <a name="isOwnedResource" id="appflow-cdk.SnowflakeConnectorProfile.isOwnedResource"></a>
+
+```typescript
+import { SnowflakeConnectorProfile } from 'appflow-cdk'
+
+SnowflakeConnectorProfile.isOwnedResource(construct: IConstruct)
+```
+
+Returns true if the construct was created by CDK, and false otherwise.
+
+###### `construct`<sup>Required</sup> <a name="construct" id="appflow-cdk.SnowflakeConnectorProfile.isOwnedResource.parameter.construct"></a>
+
+- *Type:* constructs.IConstruct
+
+---
+
+##### `isResource` <a name="isResource" id="appflow-cdk.SnowflakeConnectorProfile.isResource"></a>
+
+```typescript
+import { SnowflakeConnectorProfile } from 'appflow-cdk'
+
+SnowflakeConnectorProfile.isResource(construct: IConstruct)
+```
+
+Check whether the given construct is a Resource.
+
+###### `construct`<sup>Required</sup> <a name="construct" id="appflow-cdk.SnowflakeConnectorProfile.isResource.parameter.construct"></a>
+
+- *Type:* constructs.IConstruct
+
+---
+
+##### `fromConnectionProfileArn` <a name="fromConnectionProfileArn" id="appflow-cdk.SnowflakeConnectorProfile.fromConnectionProfileArn"></a>
+
+```typescript
+import { SnowflakeConnectorProfile } from 'appflow-cdk'
+
+SnowflakeConnectorProfile.fromConnectionProfileArn(scope: Construct, id: string, arn: string)
+```
+
+###### `scope`<sup>Required</sup> <a name="scope" id="appflow-cdk.SnowflakeConnectorProfile.fromConnectionProfileArn.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+---
+
+###### `id`<sup>Required</sup> <a name="id" id="appflow-cdk.SnowflakeConnectorProfile.fromConnectionProfileArn.parameter.id"></a>
+
+- *Type:* string
+
+---
+
+###### `arn`<sup>Required</sup> <a name="arn" id="appflow-cdk.SnowflakeConnectorProfile.fromConnectionProfileArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `fromConnectionProfileName` <a name="fromConnectionProfileName" id="appflow-cdk.SnowflakeConnectorProfile.fromConnectionProfileName"></a>
+
+```typescript
+import { SnowflakeConnectorProfile } from 'appflow-cdk'
+
+SnowflakeConnectorProfile.fromConnectionProfileName(scope: Construct, id: string, name: string)
+```
+
+###### `scope`<sup>Required</sup> <a name="scope" id="appflow-cdk.SnowflakeConnectorProfile.fromConnectionProfileName.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+---
+
+###### `id`<sup>Required</sup> <a name="id" id="appflow-cdk.SnowflakeConnectorProfile.fromConnectionProfileName.parameter.id"></a>
+
+- *Type:* string
+
+---
+
+###### `name`<sup>Required</sup> <a name="name" id="appflow-cdk.SnowflakeConnectorProfile.fromConnectionProfileName.parameter.name"></a>
+
+- *Type:* string
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#appflow-cdk.SnowflakeConnectorProfile.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#appflow-cdk.SnowflakeConnectorProfile.property.env">env</a></code> | <code>aws-cdk-lib.ResourceEnvironment</code> | The environment this resource belongs to. |
+| <code><a href="#appflow-cdk.SnowflakeConnectorProfile.property.stack">stack</a></code> | <code>aws-cdk-lib.Stack</code> | The stack in which this resource is defined. |
+| <code><a href="#appflow-cdk.SnowflakeConnectorProfile.property.arn">arn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#appflow-cdk.SnowflakeConnectorProfile.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#appflow-cdk.SnowflakeConnectorProfile.property.credentials">credentials</a></code> | <code>aws-cdk-lib.aws_secretsmanager.ISecret</code> | *No description.* |
+| <code><a href="#appflow-cdk.SnowflakeConnectorProfile.property.integrationRole">integrationRole</a></code> | <code>aws-cdk-lib.aws_iam.IRole</code> | *No description.* |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="appflow-cdk.SnowflakeConnectorProfile.property.node"></a>
+
+```typescript
+public readonly node: Node;
+```
+
+- *Type:* constructs.Node
+
+The tree node.
+
+---
+
+##### `env`<sup>Required</sup> <a name="env" id="appflow-cdk.SnowflakeConnectorProfile.property.env"></a>
+
+```typescript
+public readonly env: ResourceEnvironment;
+```
+
+- *Type:* aws-cdk-lib.ResourceEnvironment
+
+The environment this resource belongs to.
+
+For resources that are created and managed by the CDK
+(generally, those created by creating new class instances like Role, Bucket, etc.),
+this is always the same as the environment of the stack they belong to;
+however, for imported resources
+(those obtained from static methods like fromRoleArn, fromBucketName, etc.),
+that might be different than the stack they were imported into.
+
+---
+
+##### `stack`<sup>Required</sup> <a name="stack" id="appflow-cdk.SnowflakeConnectorProfile.property.stack"></a>
+
+```typescript
+public readonly stack: Stack;
+```
+
+- *Type:* aws-cdk-lib.Stack
+
+The stack in which this resource is defined.
+
+---
+
+##### `arn`<sup>Required</sup> <a name="arn" id="appflow-cdk.SnowflakeConnectorProfile.property.arn"></a>
+
+```typescript
+public readonly arn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="appflow-cdk.SnowflakeConnectorProfile.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `credentials`<sup>Optional</sup> <a name="credentials" id="appflow-cdk.SnowflakeConnectorProfile.property.credentials"></a>
+
+```typescript
+public readonly credentials: ISecret;
+```
+
+- *Type:* aws-cdk-lib.aws_secretsmanager.ISecret
+
+---
+
+##### `integrationRole`<sup>Optional</sup> <a name="integrationRole" id="appflow-cdk.SnowflakeConnectorProfile.property.integrationRole"></a>
+
+```typescript
+public readonly integrationRole: IRole;
+```
+
+- *Type:* aws-cdk-lib.aws_iam.IRole
+
+---
+
+
 ### TriggeredFlowBase <a name="TriggeredFlowBase" id="appflow-cdk.TriggeredFlowBase"></a>
 
 - *Implements:* <a href="#appflow-cdk.IFlow">IFlow</a>
@@ -4328,6 +4891,281 @@ public readonly validations: IValidation[];
 ```
 
 - *Type:* <a href="#appflow-cdk.IValidation">IValidation</a>[]
+
+---
+
+### GoogleAnalytics4ConnectorProfileProps <a name="GoogleAnalytics4ConnectorProfileProps" id="appflow-cdk.GoogleAnalytics4ConnectorProfileProps"></a>
+
+#### Initializer <a name="Initializer" id="appflow-cdk.GoogleAnalytics4ConnectorProfileProps.Initializer"></a>
+
+```typescript
+import { GoogleAnalytics4ConnectorProfileProps } from 'appflow-cdk'
+
+const googleAnalytics4ConnectorProfileProps: GoogleAnalytics4ConnectorProfileProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#appflow-cdk.GoogleAnalytics4ConnectorProfileProps.property.key">key</a></code> | <code>aws-cdk-lib.aws_kms.IKey</code> | TODO: think if this should be here as not all connector profiles have that. |
+| <code><a href="#appflow-cdk.GoogleAnalytics4ConnectorProfileProps.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#appflow-cdk.GoogleAnalytics4ConnectorProfileProps.property.oAuth">oAuth</a></code> | <code><a href="#appflow-cdk.GoogleAnalytics4OAuthSettings">GoogleAnalytics4OAuthSettings</a></code> | *No description.* |
+
+---
+
+##### `key`<sup>Optional</sup> <a name="key" id="appflow-cdk.GoogleAnalytics4ConnectorProfileProps.property.key"></a>
+
+```typescript
+public readonly key: IKey;
+```
+
+- *Type:* aws-cdk-lib.aws_kms.IKey
+
+TODO: think if this should be here as not all connector profiles have that.
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="appflow-cdk.GoogleAnalytics4ConnectorProfileProps.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `oAuth`<sup>Required</sup> <a name="oAuth" id="appflow-cdk.GoogleAnalytics4ConnectorProfileProps.property.oAuth"></a>
+
+```typescript
+public readonly oAuth: GoogleAnalytics4OAuthSettings;
+```
+
+- *Type:* <a href="#appflow-cdk.GoogleAnalytics4OAuthSettings">GoogleAnalytics4OAuthSettings</a>
+
+---
+
+### GoogleAnalytics4OAuthEndpointsSettings <a name="GoogleAnalytics4OAuthEndpointsSettings" id="appflow-cdk.GoogleAnalytics4OAuthEndpointsSettings"></a>
+
+#### Initializer <a name="Initializer" id="appflow-cdk.GoogleAnalytics4OAuthEndpointsSettings.Initializer"></a>
+
+```typescript
+import { GoogleAnalytics4OAuthEndpointsSettings } from 'appflow-cdk'
+
+const googleAnalytics4OAuthEndpointsSettings: GoogleAnalytics4OAuthEndpointsSettings = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#appflow-cdk.GoogleAnalytics4OAuthEndpointsSettings.property.token">token</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `token`<sup>Required</sup> <a name="token" id="appflow-cdk.GoogleAnalytics4OAuthEndpointsSettings.property.token"></a>
+
+```typescript
+public readonly token: string;
+```
+
+- *Type:* string
+
+---
+
+### GoogleAnalytics4OAuthFlows <a name="GoogleAnalytics4OAuthFlows" id="appflow-cdk.GoogleAnalytics4OAuthFlows"></a>
+
+#### Initializer <a name="Initializer" id="appflow-cdk.GoogleAnalytics4OAuthFlows.Initializer"></a>
+
+```typescript
+import { GoogleAnalytics4OAuthFlows } from 'appflow-cdk'
+
+const googleAnalytics4OAuthFlows: GoogleAnalytics4OAuthFlows = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#appflow-cdk.GoogleAnalytics4OAuthFlows.property.refreshTokenGrant">refreshTokenGrant</a></code> | <code><a href="#appflow-cdk.GoogleAnalytics4OAuthRefreshTokenGrantFlowSettings">GoogleAnalytics4OAuthRefreshTokenGrantFlowSettings</a></code> | *No description.* |
+
+---
+
+##### `refreshTokenGrant`<sup>Required</sup> <a name="refreshTokenGrant" id="appflow-cdk.GoogleAnalytics4OAuthFlows.property.refreshTokenGrant"></a>
+
+```typescript
+public readonly refreshTokenGrant: GoogleAnalytics4OAuthRefreshTokenGrantFlowSettings;
+```
+
+- *Type:* <a href="#appflow-cdk.GoogleAnalytics4OAuthRefreshTokenGrantFlowSettings">GoogleAnalytics4OAuthRefreshTokenGrantFlowSettings</a>
+
+---
+
+### GoogleAnalytics4OAuthRefreshTokenGrantFlowSettings <a name="GoogleAnalytics4OAuthRefreshTokenGrantFlowSettings" id="appflow-cdk.GoogleAnalytics4OAuthRefreshTokenGrantFlowSettings"></a>
+
+#### Initializer <a name="Initializer" id="appflow-cdk.GoogleAnalytics4OAuthRefreshTokenGrantFlowSettings.Initializer"></a>
+
+```typescript
+import { GoogleAnalytics4OAuthRefreshTokenGrantFlowSettings } from 'appflow-cdk'
+
+const googleAnalytics4OAuthRefreshTokenGrantFlowSettings: GoogleAnalytics4OAuthRefreshTokenGrantFlowSettings = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#appflow-cdk.GoogleAnalytics4OAuthRefreshTokenGrantFlowSettings.property.clientId">clientId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#appflow-cdk.GoogleAnalytics4OAuthRefreshTokenGrantFlowSettings.property.clientSecret">clientSecret</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#appflow-cdk.GoogleAnalytics4OAuthRefreshTokenGrantFlowSettings.property.redirectUri">redirectUri</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#appflow-cdk.GoogleAnalytics4OAuthRefreshTokenGrantFlowSettings.property.refreshToken">refreshToken</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `clientId`<sup>Optional</sup> <a name="clientId" id="appflow-cdk.GoogleAnalytics4OAuthRefreshTokenGrantFlowSettings.property.clientId"></a>
+
+```typescript
+public readonly clientId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `clientSecret`<sup>Optional</sup> <a name="clientSecret" id="appflow-cdk.GoogleAnalytics4OAuthRefreshTokenGrantFlowSettings.property.clientSecret"></a>
+
+```typescript
+public readonly clientSecret: string;
+```
+
+- *Type:* string
+
+---
+
+##### `redirectUri`<sup>Optional</sup> <a name="redirectUri" id="appflow-cdk.GoogleAnalytics4OAuthRefreshTokenGrantFlowSettings.property.redirectUri"></a>
+
+```typescript
+public readonly redirectUri: string;
+```
+
+- *Type:* string
+
+---
+
+##### `refreshToken`<sup>Optional</sup> <a name="refreshToken" id="appflow-cdk.GoogleAnalytics4OAuthRefreshTokenGrantFlowSettings.property.refreshToken"></a>
+
+```typescript
+public readonly refreshToken: string;
+```
+
+- *Type:* string
+
+---
+
+### GoogleAnalytics4OAuthSettings <a name="GoogleAnalytics4OAuthSettings" id="appflow-cdk.GoogleAnalytics4OAuthSettings"></a>
+
+#### Initializer <a name="Initializer" id="appflow-cdk.GoogleAnalytics4OAuthSettings.Initializer"></a>
+
+```typescript
+import { GoogleAnalytics4OAuthSettings } from 'appflow-cdk'
+
+const googleAnalytics4OAuthSettings: GoogleAnalytics4OAuthSettings = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#appflow-cdk.GoogleAnalytics4OAuthSettings.property.endpoints">endpoints</a></code> | <code><a href="#appflow-cdk.GoogleAnalytics4OAuthEndpointsSettings">GoogleAnalytics4OAuthEndpointsSettings</a></code> | *No description.* |
+| <code><a href="#appflow-cdk.GoogleAnalytics4OAuthSettings.property.accessToken">accessToken</a></code> | <code>string</code> | The access token to be used when interacting with Google Analytics 4. |
+| <code><a href="#appflow-cdk.GoogleAnalytics4OAuthSettings.property.flows">flows</a></code> | <code><a href="#appflow-cdk.GoogleAnalytics4OAuthFlows">GoogleAnalytics4OAuthFlows</a></code> | *No description.* |
+
+---
+
+##### `endpoints`<sup>Required</sup> <a name="endpoints" id="appflow-cdk.GoogleAnalytics4OAuthSettings.property.endpoints"></a>
+
+```typescript
+public readonly endpoints: GoogleAnalytics4OAuthEndpointsSettings;
+```
+
+- *Type:* <a href="#appflow-cdk.GoogleAnalytics4OAuthEndpointsSettings">GoogleAnalytics4OAuthEndpointsSettings</a>
+
+---
+
+##### `accessToken`<sup>Optional</sup> <a name="accessToken" id="appflow-cdk.GoogleAnalytics4OAuthSettings.property.accessToken"></a>
+
+```typescript
+public readonly accessToken: string;
+```
+
+- *Type:* string
+
+The access token to be used when interacting with Google Analytics 4.
+
+Note that if only the access token is provided AppFlow is not able to retrieve a fresh access token when the current one is expired
+
+---
+
+##### `flows`<sup>Optional</sup> <a name="flows" id="appflow-cdk.GoogleAnalytics4OAuthSettings.property.flows"></a>
+
+```typescript
+public readonly flows: GoogleAnalytics4OAuthFlows;
+```
+
+- *Type:* <a href="#appflow-cdk.GoogleAnalytics4OAuthFlows">GoogleAnalytics4OAuthFlows</a>
+
+---
+
+### GoogleAnalytics4SourceProps <a name="GoogleAnalytics4SourceProps" id="appflow-cdk.GoogleAnalytics4SourceProps"></a>
+
+Properties of a Google Analytics v4 Source.
+
+#### Initializer <a name="Initializer" id="appflow-cdk.GoogleAnalytics4SourceProps.Initializer"></a>
+
+```typescript
+import { GoogleAnalytics4SourceProps } from 'appflow-cdk'
+
+const googleAnalytics4SourceProps: GoogleAnalytics4SourceProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#appflow-cdk.GoogleAnalytics4SourceProps.property.apiVersion">apiVersion</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#appflow-cdk.GoogleAnalytics4SourceProps.property.object">object</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#appflow-cdk.GoogleAnalytics4SourceProps.property.profile">profile</a></code> | <code><a href="#appflow-cdk.GoogleAnalytics4ConnectorProfile">GoogleAnalytics4ConnectorProfile</a></code> | *No description.* |
+
+---
+
+##### `apiVersion`<sup>Required</sup> <a name="apiVersion" id="appflow-cdk.GoogleAnalytics4SourceProps.property.apiVersion"></a>
+
+```typescript
+public readonly apiVersion: string;
+```
+
+- *Type:* string
+
+---
+
+##### `object`<sup>Required</sup> <a name="object" id="appflow-cdk.GoogleAnalytics4SourceProps.property.object"></a>
+
+```typescript
+public readonly object: string;
+```
+
+- *Type:* string
+
+---
+
+##### `profile`<sup>Required</sup> <a name="profile" id="appflow-cdk.GoogleAnalytics4SourceProps.property.profile"></a>
+
+```typescript
+public readonly profile: GoogleAnalytics4ConnectorProfile;
+```
+
+- *Type:* <a href="#appflow-cdk.GoogleAnalytics4ConnectorProfile">GoogleAnalytics4ConnectorProfile</a>
 
 ---
 
@@ -5663,34 +6501,6 @@ public readonly format: S3InputFormat;
 
 ---
 
-### SalesforceConnectorCredentials <a name="SalesforceConnectorCredentials" id="appflow-cdk.SalesforceConnectorCredentials"></a>
-
-#### Initializer <a name="Initializer" id="appflow-cdk.SalesforceConnectorCredentials.Initializer"></a>
-
-```typescript
-import { SalesforceConnectorCredentials } from 'appflow-cdk'
-
-const salesforceConnectorCredentials: SalesforceConnectorCredentials = { ... }
-```
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#appflow-cdk.SalesforceConnectorCredentials.property.oAuth">oAuth</a></code> | <code><a href="#appflow-cdk.SalesforceOAuthSettings">SalesforceOAuthSettings</a></code> | *No description.* |
-
----
-
-##### `oAuth`<sup>Required</sup> <a name="oAuth" id="appflow-cdk.SalesforceConnectorCredentials.property.oAuth"></a>
-
-```typescript
-public readonly oAuth: SalesforceOAuthSettings;
-```
-
-- *Type:* <a href="#appflow-cdk.SalesforceOAuthSettings">SalesforceOAuthSettings</a>
-
----
-
 ### SalesforceConnectorProfileProps <a name="SalesforceConnectorProfileProps" id="appflow-cdk.SalesforceConnectorProfileProps"></a>
 
 #### Initializer <a name="Initializer" id="appflow-cdk.SalesforceConnectorProfileProps.Initializer"></a>
@@ -5707,8 +6517,9 @@ const salesforceConnectorProfileProps: SalesforceConnectorProfileProps = { ... }
 | --- | --- | --- |
 | <code><a href="#appflow-cdk.SalesforceConnectorProfileProps.property.key">key</a></code> | <code>aws-cdk-lib.aws_kms.IKey</code> | TODO: think if this should be here as not all connector profiles have that. |
 | <code><a href="#appflow-cdk.SalesforceConnectorProfileProps.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#appflow-cdk.SalesforceConnectorProfileProps.property.credentials">credentials</a></code> | <code><a href="#appflow-cdk.SalesforceConnectorCredentials">SalesforceConnectorCredentials</a></code> | *No description.* |
-| <code><a href="#appflow-cdk.SalesforceConnectorProfileProps.property.properties">properties</a></code> | <code><a href="#appflow-cdk.SalesforceConnectorProperties">SalesforceConnectorProperties</a></code> | *No description.* |
+| <code><a href="#appflow-cdk.SalesforceConnectorProfileProps.property.instanceUrl">instanceUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#appflow-cdk.SalesforceConnectorProfileProps.property.isSandbox">isSandbox</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#appflow-cdk.SalesforceConnectorProfileProps.property.oAuth">oAuth</a></code> | <code><a href="#appflow-cdk.SalesforceOAuthSettings">SalesforceOAuthSettings</a></code> | *No description.* |
 
 ---
 
@@ -5734,46 +6545,7 @@ public readonly name: string;
 
 ---
 
-##### `credentials`<sup>Required</sup> <a name="credentials" id="appflow-cdk.SalesforceConnectorProfileProps.property.credentials"></a>
-
-```typescript
-public readonly credentials: SalesforceConnectorCredentials;
-```
-
-- *Type:* <a href="#appflow-cdk.SalesforceConnectorCredentials">SalesforceConnectorCredentials</a>
-
----
-
-##### `properties`<sup>Required</sup> <a name="properties" id="appflow-cdk.SalesforceConnectorProfileProps.property.properties"></a>
-
-```typescript
-public readonly properties: SalesforceConnectorProperties;
-```
-
-- *Type:* <a href="#appflow-cdk.SalesforceConnectorProperties">SalesforceConnectorProperties</a>
-
----
-
-### SalesforceConnectorProperties <a name="SalesforceConnectorProperties" id="appflow-cdk.SalesforceConnectorProperties"></a>
-
-#### Initializer <a name="Initializer" id="appflow-cdk.SalesforceConnectorProperties.Initializer"></a>
-
-```typescript
-import { SalesforceConnectorProperties } from 'appflow-cdk'
-
-const salesforceConnectorProperties: SalesforceConnectorProperties = { ... }
-```
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#appflow-cdk.SalesforceConnectorProperties.property.instanceUrl">instanceUrl</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#appflow-cdk.SalesforceConnectorProperties.property.isSandbox">isSandbox</a></code> | <code>boolean</code> | *No description.* |
-
----
-
-##### `instanceUrl`<sup>Required</sup> <a name="instanceUrl" id="appflow-cdk.SalesforceConnectorProperties.property.instanceUrl"></a>
+##### `instanceUrl`<sup>Required</sup> <a name="instanceUrl" id="appflow-cdk.SalesforceConnectorProfileProps.property.instanceUrl"></a>
 
 ```typescript
 public readonly instanceUrl: string;
@@ -5783,13 +6555,23 @@ public readonly instanceUrl: string;
 
 ---
 
-##### `isSandbox`<sup>Required</sup> <a name="isSandbox" id="appflow-cdk.SalesforceConnectorProperties.property.isSandbox"></a>
+##### `isSandbox`<sup>Required</sup> <a name="isSandbox" id="appflow-cdk.SalesforceConnectorProfileProps.property.isSandbox"></a>
 
 ```typescript
 public readonly isSandbox: boolean;
 ```
 
 - *Type:* boolean
+
+---
+
+##### `oAuth`<sup>Required</sup> <a name="oAuth" id="appflow-cdk.SalesforceConnectorProfileProps.property.oAuth"></a>
+
+```typescript
+public readonly oAuth: SalesforceOAuthSettings;
+```
+
+- *Type:* <a href="#appflow-cdk.SalesforceOAuthSettings">SalesforceOAuthSettings</a>
 
 ---
 
@@ -6003,6 +6785,34 @@ public readonly tokenUrl: string;
 
 ---
 
+### SalesforceMarketingCloudOAuthFlows <a name="SalesforceMarketingCloudOAuthFlows" id="appflow-cdk.SalesforceMarketingCloudOAuthFlows"></a>
+
+#### Initializer <a name="Initializer" id="appflow-cdk.SalesforceMarketingCloudOAuthFlows.Initializer"></a>
+
+```typescript
+import { SalesforceMarketingCloudOAuthFlows } from 'appflow-cdk'
+
+const salesforceMarketingCloudOAuthFlows: SalesforceMarketingCloudOAuthFlows = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#appflow-cdk.SalesforceMarketingCloudOAuthFlows.property.refreshTokenGrant">refreshTokenGrant</a></code> | <code><a href="#appflow-cdk.SalesforceMarketingCloudOAuthRefreshTokenGrantFlowSettings">SalesforceMarketingCloudOAuthRefreshTokenGrantFlowSettings</a></code> | *No description.* |
+
+---
+
+##### `refreshTokenGrant`<sup>Required</sup> <a name="refreshTokenGrant" id="appflow-cdk.SalesforceMarketingCloudOAuthFlows.property.refreshTokenGrant"></a>
+
+```typescript
+public readonly refreshTokenGrant: SalesforceMarketingCloudOAuthRefreshTokenGrantFlowSettings;
+```
+
+- *Type:* <a href="#appflow-cdk.SalesforceMarketingCloudOAuthRefreshTokenGrantFlowSettings">SalesforceMarketingCloudOAuthRefreshTokenGrantFlowSettings</a>
+
+---
+
 ### SalesforceMarketingCloudOAuthRefreshTokenGrantFlowSettings <a name="SalesforceMarketingCloudOAuthRefreshTokenGrantFlowSettings" id="appflow-cdk.SalesforceMarketingCloudOAuthRefreshTokenGrantFlowSettings"></a>
 
 #### Initializer <a name="Initializer" id="appflow-cdk.SalesforceMarketingCloudOAuthRefreshTokenGrantFlowSettings.Initializer"></a>
@@ -6017,24 +6827,13 @@ const salesforceMarketingCloudOAuthRefreshTokenGrantFlowSettings: SalesforceMark
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#appflow-cdk.SalesforceMarketingCloudOAuthRefreshTokenGrantFlowSettings.property.accessToken">accessToken</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#appflow-cdk.SalesforceMarketingCloudOAuthRefreshTokenGrantFlowSettings.property.clientId">clientId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#appflow-cdk.SalesforceMarketingCloudOAuthRefreshTokenGrantFlowSettings.property.clientSecret">clientSecret</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#appflow-cdk.SalesforceMarketingCloudOAuthRefreshTokenGrantFlowSettings.property.refreshToken">refreshToken</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `accessToken`<sup>Optional</sup> <a name="accessToken" id="appflow-cdk.SalesforceMarketingCloudOAuthRefreshTokenGrantFlowSettings.property.accessToken"></a>
-
-```typescript
-public readonly accessToken: string;
-```
-
-- *Type:* string
-
----
-
-##### `clientId`<sup>Optional</sup> <a name="clientId" id="appflow-cdk.SalesforceMarketingCloudOAuthRefreshTokenGrantFlowSettings.property.clientId"></a>
+##### `clientId`<sup>Required</sup> <a name="clientId" id="appflow-cdk.SalesforceMarketingCloudOAuthRefreshTokenGrantFlowSettings.property.clientId"></a>
 
 ```typescript
 public readonly clientId: string;
@@ -6044,7 +6843,7 @@ public readonly clientId: string;
 
 ---
 
-##### `clientSecret`<sup>Optional</sup> <a name="clientSecret" id="appflow-cdk.SalesforceMarketingCloudOAuthRefreshTokenGrantFlowSettings.property.clientSecret"></a>
+##### `clientSecret`<sup>Required</sup> <a name="clientSecret" id="appflow-cdk.SalesforceMarketingCloudOAuthRefreshTokenGrantFlowSettings.property.clientSecret"></a>
 
 ```typescript
 public readonly clientSecret: string;
@@ -6078,17 +6877,28 @@ const salesforceMarketingCloudOAuthSettings: SalesforceMarketingCloudOAuthSettin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#appflow-cdk.SalesforceMarketingCloudOAuthSettings.property.refreshToken">refreshToken</a></code> | <code><a href="#appflow-cdk.SalesforceMarketingCloudOAuthRefreshTokenGrantFlowSettings">SalesforceMarketingCloudOAuthRefreshTokenGrantFlowSettings</a></code> | *No description.* |
+| <code><a href="#appflow-cdk.SalesforceMarketingCloudOAuthSettings.property.accessToken">accessToken</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#appflow-cdk.SalesforceMarketingCloudOAuthSettings.property.flows">flows</a></code> | <code><a href="#appflow-cdk.SalesforceMarketingCloudOAuthFlows">SalesforceMarketingCloudOAuthFlows</a></code> | *No description.* |
 
 ---
 
-##### `refreshToken`<sup>Required</sup> <a name="refreshToken" id="appflow-cdk.SalesforceMarketingCloudOAuthSettings.property.refreshToken"></a>
+##### `accessToken`<sup>Optional</sup> <a name="accessToken" id="appflow-cdk.SalesforceMarketingCloudOAuthSettings.property.accessToken"></a>
 
 ```typescript
-public readonly refreshToken: SalesforceMarketingCloudOAuthRefreshTokenGrantFlowSettings;
+public readonly accessToken: string;
 ```
 
-- *Type:* <a href="#appflow-cdk.SalesforceMarketingCloudOAuthRefreshTokenGrantFlowSettings">SalesforceMarketingCloudOAuthRefreshTokenGrantFlowSettings</a>
+- *Type:* string
+
+---
+
+##### `flows`<sup>Optional</sup> <a name="flows" id="appflow-cdk.SalesforceMarketingCloudOAuthSettings.property.flows"></a>
+
+```typescript
+public readonly flows: SalesforceMarketingCloudOAuthFlows;
+```
+
+- *Type:* <a href="#appflow-cdk.SalesforceMarketingCloudOAuthFlows">SalesforceMarketingCloudOAuthFlows</a>
 
 ---
 
@@ -6144,6 +6954,34 @@ public readonly profile: SalesforceMarketingCloudConnectorProfile;
 
 ---
 
+### SalesforceOAuthFlows <a name="SalesforceOAuthFlows" id="appflow-cdk.SalesforceOAuthFlows"></a>
+
+#### Initializer <a name="Initializer" id="appflow-cdk.SalesforceOAuthFlows.Initializer"></a>
+
+```typescript
+import { SalesforceOAuthFlows } from 'appflow-cdk'
+
+const salesforceOAuthFlows: SalesforceOAuthFlows = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#appflow-cdk.SalesforceOAuthFlows.property.refreshTokenGrant">refreshTokenGrant</a></code> | <code><a href="#appflow-cdk.SalesforceOAuthRefreshTokenGrantFlowSettings">SalesforceOAuthRefreshTokenGrantFlowSettings</a></code> | *No description.* |
+
+---
+
+##### `refreshTokenGrant`<sup>Required</sup> <a name="refreshTokenGrant" id="appflow-cdk.SalesforceOAuthFlows.property.refreshTokenGrant"></a>
+
+```typescript
+public readonly refreshTokenGrant: SalesforceOAuthRefreshTokenGrantFlowSettings;
+```
+
+- *Type:* <a href="#appflow-cdk.SalesforceOAuthRefreshTokenGrantFlowSettings">SalesforceOAuthRefreshTokenGrantFlowSettings</a>
+
+---
+
 ### SalesforceOAuthRefreshTokenGrantFlowSettings <a name="SalesforceOAuthRefreshTokenGrantFlowSettings" id="appflow-cdk.SalesforceOAuthRefreshTokenGrantFlowSettings"></a>
 
 #### Initializer <a name="Initializer" id="appflow-cdk.SalesforceOAuthRefreshTokenGrantFlowSettings.Initializer"></a>
@@ -6158,19 +6996,8 @@ const salesforceOAuthRefreshTokenGrantFlowSettings: SalesforceOAuthRefreshTokenG
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#appflow-cdk.SalesforceOAuthRefreshTokenGrantFlowSettings.property.accessToken">accessToken</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#appflow-cdk.SalesforceOAuthRefreshTokenGrantFlowSettings.property.client">client</a></code> | <code>aws-cdk-lib.aws_secretsmanager.ISecret</code> | *No description.* |
 | <code><a href="#appflow-cdk.SalesforceOAuthRefreshTokenGrantFlowSettings.property.refreshToken">refreshToken</a></code> | <code>string</code> | *No description.* |
-
----
-
-##### `accessToken`<sup>Optional</sup> <a name="accessToken" id="appflow-cdk.SalesforceOAuthRefreshTokenGrantFlowSettings.property.accessToken"></a>
-
-```typescript
-public readonly accessToken: string;
-```
-
-- *Type:* string
 
 ---
 
@@ -6208,17 +7035,28 @@ const salesforceOAuthSettings: SalesforceOAuthSettings = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#appflow-cdk.SalesforceOAuthSettings.property.refreshToken">refreshToken</a></code> | <code><a href="#appflow-cdk.SalesforceOAuthRefreshTokenGrantFlowSettings">SalesforceOAuthRefreshTokenGrantFlowSettings</a></code> | *No description.* |
+| <code><a href="#appflow-cdk.SalesforceOAuthSettings.property.accessToken">accessToken</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#appflow-cdk.SalesforceOAuthSettings.property.flows">flows</a></code> | <code><a href="#appflow-cdk.SalesforceOAuthFlows">SalesforceOAuthFlows</a></code> | *No description.* |
 
 ---
 
-##### `refreshToken`<sup>Required</sup> <a name="refreshToken" id="appflow-cdk.SalesforceOAuthSettings.property.refreshToken"></a>
+##### `accessToken`<sup>Optional</sup> <a name="accessToken" id="appflow-cdk.SalesforceOAuthSettings.property.accessToken"></a>
 
 ```typescript
-public readonly refreshToken: SalesforceOAuthRefreshTokenGrantFlowSettings;
+public readonly accessToken: string;
 ```
 
-- *Type:* <a href="#appflow-cdk.SalesforceOAuthRefreshTokenGrantFlowSettings">SalesforceOAuthRefreshTokenGrantFlowSettings</a>
+- *Type:* string
+
+---
+
+##### `flows`<sup>Optional</sup> <a name="flows" id="appflow-cdk.SalesforceOAuthSettings.property.flows"></a>
+
+```typescript
+public readonly flows: SalesforceOAuthFlows;
+```
+
+- *Type:* <a href="#appflow-cdk.SalesforceOAuthFlows">SalesforceOAuthFlows</a>
 
 ---
 
@@ -6601,7 +7439,6 @@ const sAPOdataOauthRefreshTokenGrantFlowSettings: SAPOdataOauthRefreshTokenGrant
 | --- | --- | --- |
 | <code><a href="#appflow-cdk.SAPOdataOauthRefreshTokenGrantFlowSettings.property.clientId">clientId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#appflow-cdk.SAPOdataOauthRefreshTokenGrantFlowSettings.property.clientSecret">clientSecret</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#appflow-cdk.SAPOdataOauthRefreshTokenGrantFlowSettings.property.accessToken">accessToken</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#appflow-cdk.SAPOdataOauthRefreshTokenGrantFlowSettings.property.refreshToken">refreshToken</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -6620,16 +7457,6 @@ public readonly clientId: string;
 
 ```typescript
 public readonly clientSecret: string;
-```
-
-- *Type:* string
-
----
-
-##### `accessToken`<sup>Optional</sup> <a name="accessToken" id="appflow-cdk.SAPOdataOauthRefreshTokenGrantFlowSettings.property.accessToken"></a>
-
-```typescript
-public readonly accessToken: string;
 ```
 
 - *Type:* string
@@ -6661,6 +7488,7 @@ const sAPOdataOAuthSettings: SAPOdataOAuthSettings = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#appflow-cdk.SAPOdataOAuthSettings.property.refreshToken">refreshToken</a></code> | <code><a href="#appflow-cdk.SAPOdataOauthRefreshTokenGrantFlowSettings">SAPOdataOauthRefreshTokenGrantFlowSettings</a></code> | *No description.* |
+| <code><a href="#appflow-cdk.SAPOdataOAuthSettings.property.accessToken">accessToken</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -6671,6 +7499,16 @@ public readonly refreshToken: SAPOdataOauthRefreshTokenGrantFlowSettings;
 ```
 
 - *Type:* <a href="#appflow-cdk.SAPOdataOauthRefreshTokenGrantFlowSettings">SAPOdataOauthRefreshTokenGrantFlowSettings</a>
+
+---
+
+##### `accessToken`<sup>Optional</sup> <a name="accessToken" id="appflow-cdk.SAPOdataOAuthSettings.property.accessToken"></a>
+
+```typescript
+public readonly accessToken: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -7232,6 +8070,422 @@ public readonly apiVersion: string;
 
 ---
 
+### SnowflakeBasicSettings <a name="SnowflakeBasicSettings" id="appflow-cdk.SnowflakeBasicSettings"></a>
+
+#### Initializer <a name="Initializer" id="appflow-cdk.SnowflakeBasicSettings.Initializer"></a>
+
+```typescript
+import { SnowflakeBasicSettings } from 'appflow-cdk'
+
+const snowflakeBasicSettings: SnowflakeBasicSettings = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#appflow-cdk.SnowflakeBasicSettings.property.password">password</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#appflow-cdk.SnowflakeBasicSettings.property.username">username</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `password`<sup>Required</sup> <a name="password" id="appflow-cdk.SnowflakeBasicSettings.property.password"></a>
+
+```typescript
+public readonly password: string;
+```
+
+- *Type:* string
+
+---
+
+##### `username`<sup>Required</sup> <a name="username" id="appflow-cdk.SnowflakeBasicSettings.property.username"></a>
+
+```typescript
+public readonly username: string;
+```
+
+- *Type:* string
+
+---
+
+### SnowflakeConnectorCredentials <a name="SnowflakeConnectorCredentials" id="appflow-cdk.SnowflakeConnectorCredentials"></a>
+
+#### Initializer <a name="Initializer" id="appflow-cdk.SnowflakeConnectorCredentials.Initializer"></a>
+
+```typescript
+import { SnowflakeConnectorCredentials } from 'appflow-cdk'
+
+const snowflakeConnectorCredentials: SnowflakeConnectorCredentials = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#appflow-cdk.SnowflakeConnectorCredentials.property.basic">basic</a></code> | <code><a href="#appflow-cdk.SnowflakeBasicSettings">SnowflakeBasicSettings</a></code> | *No description.* |
+
+---
+
+##### `basic`<sup>Required</sup> <a name="basic" id="appflow-cdk.SnowflakeConnectorCredentials.property.basic"></a>
+
+```typescript
+public readonly basic: SnowflakeBasicSettings;
+```
+
+- *Type:* <a href="#appflow-cdk.SnowflakeBasicSettings">SnowflakeBasicSettings</a>
+
+---
+
+### SnowflakeConnectorProfileProps <a name="SnowflakeConnectorProfileProps" id="appflow-cdk.SnowflakeConnectorProfileProps"></a>
+
+1.
+
+make sure to understand the steps here: https://docs.snowflake.com/en/user-guide/data-load-s3-config-storage-integration
+2. think if we can set up the role here somehow.
+
+#### Initializer <a name="Initializer" id="appflow-cdk.SnowflakeConnectorProfileProps.Initializer"></a>
+
+```typescript
+import { SnowflakeConnectorProfileProps } from 'appflow-cdk'
+
+const snowflakeConnectorProfileProps: SnowflakeConnectorProfileProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#appflow-cdk.SnowflakeConnectorProfileProps.property.key">key</a></code> | <code>aws-cdk-lib.aws_kms.IKey</code> | TODO: think if this should be here as not all connector profiles have that. |
+| <code><a href="#appflow-cdk.SnowflakeConnectorProfileProps.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#appflow-cdk.SnowflakeConnectorProfileProps.property.credentials">credentials</a></code> | <code><a href="#appflow-cdk.SnowflakeConnectorCredentials">SnowflakeConnectorCredentials</a></code> | *No description.* |
+| <code><a href="#appflow-cdk.SnowflakeConnectorProfileProps.property.properties">properties</a></code> | <code><a href="#appflow-cdk.SnowflakeConnectorProperties">SnowflakeConnectorProperties</a></code> | *No description.* |
+
+---
+
+##### `key`<sup>Optional</sup> <a name="key" id="appflow-cdk.SnowflakeConnectorProfileProps.property.key"></a>
+
+```typescript
+public readonly key: IKey;
+```
+
+- *Type:* aws-cdk-lib.aws_kms.IKey
+
+TODO: think if this should be here as not all connector profiles have that.
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="appflow-cdk.SnowflakeConnectorProfileProps.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `credentials`<sup>Required</sup> <a name="credentials" id="appflow-cdk.SnowflakeConnectorProfileProps.property.credentials"></a>
+
+```typescript
+public readonly credentials: SnowflakeConnectorCredentials;
+```
+
+- *Type:* <a href="#appflow-cdk.SnowflakeConnectorCredentials">SnowflakeConnectorCredentials</a>
+
+---
+
+##### `properties`<sup>Required</sup> <a name="properties" id="appflow-cdk.SnowflakeConnectorProfileProps.property.properties"></a>
+
+```typescript
+public readonly properties: SnowflakeConnectorProperties;
+```
+
+- *Type:* <a href="#appflow-cdk.SnowflakeConnectorProperties">SnowflakeConnectorProperties</a>
+
+---
+
+### SnowflakeConnectorProperties <a name="SnowflakeConnectorProperties" id="appflow-cdk.SnowflakeConnectorProperties"></a>
+
+#### Initializer <a name="Initializer" id="appflow-cdk.SnowflakeConnectorProperties.Initializer"></a>
+
+```typescript
+import { SnowflakeConnectorProperties } from 'appflow-cdk'
+
+const snowflakeConnectorProperties: SnowflakeConnectorProperties = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#appflow-cdk.SnowflakeConnectorProperties.property.associatedLocation">associatedLocation</a></code> | <code><a href="#appflow-cdk.S3Location">S3Location</a></code> | *No description.* |
+| <code><a href="#appflow-cdk.SnowflakeConnectorProperties.property.location">location</a></code> | <code><a href="#appflow-cdk.SnowflakeLocation">SnowflakeLocation</a></code> | *No description.* |
+| <code><a href="#appflow-cdk.SnowflakeConnectorProperties.property.integration">integration</a></code> | <code><a href="#appflow-cdk.SnowflakeStorageIntegration">SnowflakeStorageIntegration</a></code> | *No description.* |
+
+---
+
+##### `associatedLocation`<sup>Required</sup> <a name="associatedLocation" id="appflow-cdk.SnowflakeConnectorProperties.property.associatedLocation"></a>
+
+```typescript
+public readonly associatedLocation: S3Location;
+```
+
+- *Type:* <a href="#appflow-cdk.S3Location">S3Location</a>
+
+---
+
+##### `location`<sup>Required</sup> <a name="location" id="appflow-cdk.SnowflakeConnectorProperties.property.location"></a>
+
+```typescript
+public readonly location: SnowflakeLocation;
+```
+
+- *Type:* <a href="#appflow-cdk.SnowflakeLocation">SnowflakeLocation</a>
+
+---
+
+##### `integration`<sup>Optional</sup> <a name="integration" id="appflow-cdk.SnowflakeConnectorProperties.property.integration"></a>
+
+```typescript
+public readonly integration: SnowflakeStorageIntegration;
+```
+
+- *Type:* <a href="#appflow-cdk.SnowflakeStorageIntegration">SnowflakeStorageIntegration</a>
+
+---
+
+### SnowflakeDestinationObject <a name="SnowflakeDestinationObject" id="appflow-cdk.SnowflakeDestinationObject"></a>
+
+#### Initializer <a name="Initializer" id="appflow-cdk.SnowflakeDestinationObject.Initializer"></a>
+
+```typescript
+import { SnowflakeDestinationObject } from 'appflow-cdk'
+
+const snowflakeDestinationObject: SnowflakeDestinationObject = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#appflow-cdk.SnowflakeDestinationObject.property.database">database</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#appflow-cdk.SnowflakeDestinationObject.property.table">table</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#appflow-cdk.SnowflakeDestinationObject.property.schema">schema</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `database`<sup>Required</sup> <a name="database" id="appflow-cdk.SnowflakeDestinationObject.property.database"></a>
+
+```typescript
+public readonly database: string;
+```
+
+- *Type:* string
+
+---
+
+##### `table`<sup>Required</sup> <a name="table" id="appflow-cdk.SnowflakeDestinationObject.property.table"></a>
+
+```typescript
+public readonly table: string;
+```
+
+- *Type:* string
+
+---
+
+##### `schema`<sup>Optional</sup> <a name="schema" id="appflow-cdk.SnowflakeDestinationObject.property.schema"></a>
+
+```typescript
+public readonly schema: string;
+```
+
+- *Type:* string
+- *Default:* PUBLIC
+
+---
+
+### SnowflakeDestinationProps <a name="SnowflakeDestinationProps" id="appflow-cdk.SnowflakeDestinationProps"></a>
+
+#### Initializer <a name="Initializer" id="appflow-cdk.SnowflakeDestinationProps.Initializer"></a>
+
+```typescript
+import { SnowflakeDestinationProps } from 'appflow-cdk'
+
+const snowflakeDestinationProps: SnowflakeDestinationProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#appflow-cdk.SnowflakeDestinationProps.property.object">object</a></code> | <code><a href="#appflow-cdk.SnowflakeDestinationObject">SnowflakeDestinationObject</a></code> | A Snowflake table object (optionally with the schema). |
+| <code><a href="#appflow-cdk.SnowflakeDestinationProps.property.profile">profile</a></code> | <code><a href="#appflow-cdk.SnowflakeConnectorProfile">SnowflakeConnectorProfile</a></code> | An instance of the @type SnowflakeConnectorProfile. |
+| <code><a href="#appflow-cdk.SnowflakeDestinationProps.property.errorHandling">errorHandling</a></code> | <code><a href="#appflow-cdk.ErrorHandlingConfiguration">ErrorHandlingConfiguration</a></code> | The settings that determine how Amazon AppFlow handles an error when placing data in the Salesforce destination. |
+
+---
+
+##### `object`<sup>Required</sup> <a name="object" id="appflow-cdk.SnowflakeDestinationProps.property.object"></a>
+
+```typescript
+public readonly object: SnowflakeDestinationObject;
+```
+
+- *Type:* <a href="#appflow-cdk.SnowflakeDestinationObject">SnowflakeDestinationObject</a>
+
+A Snowflake table object (optionally with the schema).
+
+---
+
+##### `profile`<sup>Required</sup> <a name="profile" id="appflow-cdk.SnowflakeDestinationProps.property.profile"></a>
+
+```typescript
+public readonly profile: SnowflakeConnectorProfile;
+```
+
+- *Type:* <a href="#appflow-cdk.SnowflakeConnectorProfile">SnowflakeConnectorProfile</a>
+
+An instance of the @type SnowflakeConnectorProfile.
+
+---
+
+##### `errorHandling`<sup>Optional</sup> <a name="errorHandling" id="appflow-cdk.SnowflakeDestinationProps.property.errorHandling"></a>
+
+```typescript
+public readonly errorHandling: ErrorHandlingConfiguration;
+```
+
+- *Type:* <a href="#appflow-cdk.ErrorHandlingConfiguration">ErrorHandlingConfiguration</a>
+
+The settings that determine how Amazon AppFlow handles an error when placing data in the Salesforce destination.
+
+For example, this setting would determine if the flow should fail after one insertion error, or continue and attempt to insert every record regardless of the initial failure.
+
+---
+
+### SnowflakeLocation <a name="SnowflakeLocation" id="appflow-cdk.SnowflakeLocation"></a>
+
+#### Initializer <a name="Initializer" id="appflow-cdk.SnowflakeLocation.Initializer"></a>
+
+```typescript
+import { SnowflakeLocation } from 'appflow-cdk'
+
+const snowflakeLocation: SnowflakeLocation = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#appflow-cdk.SnowflakeLocation.property.account">account</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#appflow-cdk.SnowflakeLocation.property.database">database</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#appflow-cdk.SnowflakeLocation.property.schema">schema</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#appflow-cdk.SnowflakeLocation.property.stage">stage</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#appflow-cdk.SnowflakeLocation.property.warehouse">warehouse</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#appflow-cdk.SnowflakeLocation.property.region">region</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="appflow-cdk.SnowflakeLocation.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+---
+
+##### `database`<sup>Required</sup> <a name="database" id="appflow-cdk.SnowflakeLocation.property.database"></a>
+
+```typescript
+public readonly database: string;
+```
+
+- *Type:* string
+
+---
+
+##### `schema`<sup>Required</sup> <a name="schema" id="appflow-cdk.SnowflakeLocation.property.schema"></a>
+
+```typescript
+public readonly schema: string;
+```
+
+- *Type:* string
+
+---
+
+##### `stage`<sup>Required</sup> <a name="stage" id="appflow-cdk.SnowflakeLocation.property.stage"></a>
+
+```typescript
+public readonly stage: string;
+```
+
+- *Type:* string
+
+---
+
+##### `warehouse`<sup>Required</sup> <a name="warehouse" id="appflow-cdk.SnowflakeLocation.property.warehouse"></a>
+
+```typescript
+public readonly warehouse: string;
+```
+
+- *Type:* string
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="appflow-cdk.SnowflakeLocation.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+---
+
+### SnowflakeStorageIntegration <a name="SnowflakeStorageIntegration" id="appflow-cdk.SnowflakeStorageIntegration"></a>
+
+#### Initializer <a name="Initializer" id="appflow-cdk.SnowflakeStorageIntegration.Initializer"></a>
+
+```typescript
+import { SnowflakeStorageIntegration } from 'appflow-cdk'
+
+const snowflakeStorageIntegration: SnowflakeStorageIntegration = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#appflow-cdk.SnowflakeStorageIntegration.property.externalId">externalId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#appflow-cdk.SnowflakeStorageIntegration.property.storageUserArn">storageUserArn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `externalId`<sup>Required</sup> <a name="externalId" id="appflow-cdk.SnowflakeStorageIntegration.property.externalId"></a>
+
+```typescript
+public readonly externalId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `storageUserArn`<sup>Required</sup> <a name="storageUserArn" id="appflow-cdk.SnowflakeStorageIntegration.property.storageUserArn"></a>
+
+```typescript
+public readonly storageUserArn: string;
+```
+
+- *Type:* string
+
+---
+
 ### TaskConnectorOperator <a name="TaskConnectorOperator" id="appflow-cdk.TaskConnectorOperator"></a>
 
 A pair that represents the (typically source) connector, and a task operation to be performed in the context of the connector.
@@ -7780,6 +9034,7 @@ ConnectorType.custom(name: string)
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#appflow-cdk.ConnectorType.property.eventbridge">eventbridge</a></code> | <code><a href="#appflow-cdk.ConnectorType">ConnectorType</a></code> | *No description.* |
+| <code><a href="#appflow-cdk.ConnectorType.property.googleanalytics4">googleanalytics4</a></code> | <code><a href="#appflow-cdk.ConnectorType">ConnectorType</a></code> | *No description.* |
 | <code><a href="#appflow-cdk.ConnectorType.property.marketo">marketo</a></code> | <code><a href="#appflow-cdk.ConnectorType">ConnectorType</a></code> | *No description.* |
 | <code><a href="#appflow-cdk.ConnectorType.property.redshift">redshift</a></code> | <code><a href="#appflow-cdk.ConnectorType">ConnectorType</a></code> | *No description.* |
 | <code><a href="#appflow-cdk.ConnectorType.property.s3">s3</a></code> | <code><a href="#appflow-cdk.ConnectorType">ConnectorType</a></code> | *No description.* |
@@ -7788,6 +9043,7 @@ ConnectorType.custom(name: string)
 | <code><a href="#appflow-cdk.ConnectorType.property.sapodata">sapodata</a></code> | <code><a href="#appflow-cdk.ConnectorType">ConnectorType</a></code> | *No description.* |
 | <code><a href="#appflow-cdk.ConnectorType.property.servicenow">servicenow</a></code> | <code><a href="#appflow-cdk.ConnectorType">ConnectorType</a></code> | *No description.* |
 | <code><a href="#appflow-cdk.ConnectorType.property.slack">slack</a></code> | <code><a href="#appflow-cdk.ConnectorType">ConnectorType</a></code> | *No description.* |
+| <code><a href="#appflow-cdk.ConnectorType.property.snowflake">snowflake</a></code> | <code><a href="#appflow-cdk.ConnectorType">ConnectorType</a></code> | *No description.* |
 | <code><a href="#appflow-cdk.ConnectorType.property.zendesk">zendesk</a></code> | <code><a href="#appflow-cdk.ConnectorType">ConnectorType</a></code> | *No description.* |
 | <code><a href="#appflow-cdk.ConnectorType.property.asProfileConnectorType">asProfileConnectorType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#appflow-cdk.ConnectorType.property.asTaskConnectorOperatorOrigin">asTaskConnectorOperatorOrigin</a></code> | <code>string</code> | *No description.* |
@@ -7800,6 +9056,16 @@ ConnectorType.custom(name: string)
 
 ```typescript
 public readonly eventbridge: ConnectorType;
+```
+
+- *Type:* <a href="#appflow-cdk.ConnectorType">ConnectorType</a>
+
+---
+
+##### `googleanalytics4`<sup>Required</sup> <a name="googleanalytics4" id="appflow-cdk.ConnectorType.property.googleanalytics4"></a>
+
+```typescript
+public readonly googleanalytics4: ConnectorType;
 ```
 
 - *Type:* <a href="#appflow-cdk.ConnectorType">ConnectorType</a>
@@ -7880,6 +9146,16 @@ public readonly servicenow: ConnectorType;
 
 ```typescript
 public readonly slack: ConnectorType;
+```
+
+- *Type:* <a href="#appflow-cdk.ConnectorType">ConnectorType</a>
+
+---
+
+##### `snowflake`<sup>Required</sup> <a name="snowflake" id="appflow-cdk.ConnectorType.property.snowflake"></a>
+
+```typescript
+public readonly snowflake: ConnectorType;
 ```
 
 - *Type:* <a href="#appflow-cdk.ConnectorType">ConnectorType</a>
@@ -8639,6 +9915,74 @@ public readonly properties: TaskProperties;
 ```
 
 - *Type:* <a href="#appflow-cdk.TaskProperties">TaskProperties</a>
+
+---
+
+
+### GoogleAnalytics4Source <a name="GoogleAnalytics4Source" id="appflow-cdk.GoogleAnalytics4Source"></a>
+
+- *Implements:* <a href="#appflow-cdk.ISource">ISource</a>
+
+A class that represents a Google Analytics v4 Source.
+
+#### Initializers <a name="Initializers" id="appflow-cdk.GoogleAnalytics4Source.Initializer"></a>
+
+```typescript
+import { GoogleAnalytics4Source } from 'appflow-cdk'
+
+new GoogleAnalytics4Source(props: GoogleAnalytics4SourceProps)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#appflow-cdk.GoogleAnalytics4Source.Initializer.parameter.props">props</a></code> | <code><a href="#appflow-cdk.GoogleAnalytics4SourceProps">GoogleAnalytics4SourceProps</a></code> | *No description.* |
+
+---
+
+##### `props`<sup>Required</sup> <a name="props" id="appflow-cdk.GoogleAnalytics4Source.Initializer.parameter.props"></a>
+
+- *Type:* <a href="#appflow-cdk.GoogleAnalytics4SourceProps">GoogleAnalytics4SourceProps</a>
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#appflow-cdk.GoogleAnalytics4Source.bind">bind</a></code> | *No description.* |
+
+---
+
+##### `bind` <a name="bind" id="appflow-cdk.GoogleAnalytics4Source.bind"></a>
+
+```typescript
+public bind(scope: IFlow): SourceFlowConfigProperty
+```
+
+###### `scope`<sup>Required</sup> <a name="scope" id="appflow-cdk.GoogleAnalytics4Source.bind.parameter.scope"></a>
+
+- *Type:* <a href="#appflow-cdk.IFlow">IFlow</a>
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#appflow-cdk.GoogleAnalytics4Source.property.connectorType">connectorType</a></code> | <code><a href="#appflow-cdk.ConnectorType">ConnectorType</a></code> | The AppFlow type of the connector that this source is implemented for. |
+
+---
+
+##### `connectorType`<sup>Required</sup> <a name="connectorType" id="appflow-cdk.GoogleAnalytics4Source.property.connectorType"></a>
+
+```typescript
+public readonly connectorType: ConnectorType;
+```
+
+- *Type:* <a href="#appflow-cdk.ConnectorType">ConnectorType</a>
+
+The AppFlow type of the connector that this source is implemented for.
 
 ---
 
@@ -9818,6 +11162,72 @@ The AppFlow type of the connector that this source is implemented for.
 ---
 
 
+### SnowflakeDestination <a name="SnowflakeDestination" id="appflow-cdk.SnowflakeDestination"></a>
+
+- *Implements:* <a href="#appflow-cdk.IDestination">IDestination</a>
+
+#### Initializers <a name="Initializers" id="appflow-cdk.SnowflakeDestination.Initializer"></a>
+
+```typescript
+import { SnowflakeDestination } from 'appflow-cdk'
+
+new SnowflakeDestination(props: SnowflakeDestinationProps)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#appflow-cdk.SnowflakeDestination.Initializer.parameter.props">props</a></code> | <code><a href="#appflow-cdk.SnowflakeDestinationProps">SnowflakeDestinationProps</a></code> | *No description.* |
+
+---
+
+##### `props`<sup>Required</sup> <a name="props" id="appflow-cdk.SnowflakeDestination.Initializer.parameter.props"></a>
+
+- *Type:* <a href="#appflow-cdk.SnowflakeDestinationProps">SnowflakeDestinationProps</a>
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#appflow-cdk.SnowflakeDestination.bind">bind</a></code> | *No description.* |
+
+---
+
+##### `bind` <a name="bind" id="appflow-cdk.SnowflakeDestination.bind"></a>
+
+```typescript
+public bind(scope: IFlow): DestinationFlowConfigProperty
+```
+
+###### `scope`<sup>Required</sup> <a name="scope" id="appflow-cdk.SnowflakeDestination.bind.parameter.scope"></a>
+
+- *Type:* <a href="#appflow-cdk.IFlow">IFlow</a>
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#appflow-cdk.SnowflakeDestination.property.connectorType">connectorType</a></code> | <code><a href="#appflow-cdk.ConnectorType">ConnectorType</a></code> | The AppFlow type of the connector that this source is implemented for. |
+
+---
+
+##### `connectorType`<sup>Required</sup> <a name="connectorType" id="appflow-cdk.SnowflakeDestination.property.connectorType"></a>
+
+```typescript
+public readonly connectorType: ConnectorType;
+```
+
+- *Type:* <a href="#appflow-cdk.ConnectorType">ConnectorType</a>
+
+The AppFlow type of the connector that this source is implemented for.
+
+---
+
+
 ### Task <a name="Task" id="appflow-cdk.Task"></a>
 
 - *Implements:* <a href="#appflow-cdk.ITask">ITask</a>
@@ -10656,7 +12066,7 @@ The AppFlow type of the connector that this source is implemented for.
 
 - *Extends:* aws-cdk-lib.IResource
 
-- *Implemented By:* <a href="#appflow-cdk.ConnectorProfileBase">ConnectorProfileBase</a>, <a href="#appflow-cdk.MarketoConnectorProfile">MarketoConnectorProfile</a>, <a href="#appflow-cdk.RedshiftConnectorProfile">RedshiftConnectorProfile</a>, <a href="#appflow-cdk.SAPOdataConnectorProfile">SAPOdataConnectorProfile</a>, <a href="#appflow-cdk.SalesforceConnectorProfile">SalesforceConnectorProfile</a>, <a href="#appflow-cdk.SalesforceMarketingCloudConnectorProfile">SalesforceMarketingCloudConnectorProfile</a>, <a href="#appflow-cdk.ServiceNowConnectorProfile">ServiceNowConnectorProfile</a>, <a href="#appflow-cdk.SlackConnectorProfile">SlackConnectorProfile</a>, <a href="#appflow-cdk.ZendeskConnectorProfile">ZendeskConnectorProfile</a>, <a href="#appflow-cdk.IConnectorProfile">IConnectorProfile</a>
+- *Implemented By:* <a href="#appflow-cdk.ConnectorProfileBase">ConnectorProfileBase</a>, <a href="#appflow-cdk.GoogleAnalytics4ConnectorProfile">GoogleAnalytics4ConnectorProfile</a>, <a href="#appflow-cdk.MarketoConnectorProfile">MarketoConnectorProfile</a>, <a href="#appflow-cdk.RedshiftConnectorProfile">RedshiftConnectorProfile</a>, <a href="#appflow-cdk.SAPOdataConnectorProfile">SAPOdataConnectorProfile</a>, <a href="#appflow-cdk.SalesforceConnectorProfile">SalesforceConnectorProfile</a>, <a href="#appflow-cdk.SalesforceMarketingCloudConnectorProfile">SalesforceMarketingCloudConnectorProfile</a>, <a href="#appflow-cdk.ServiceNowConnectorProfile">ServiceNowConnectorProfile</a>, <a href="#appflow-cdk.SlackConnectorProfile">SlackConnectorProfile</a>, <a href="#appflow-cdk.SnowflakeConnectorProfile">SnowflakeConnectorProfile</a>, <a href="#appflow-cdk.ZendeskConnectorProfile">ZendeskConnectorProfile</a>, <a href="#appflow-cdk.IConnectorProfile">IConnectorProfile</a>
 
 
 #### Properties <a name="Properties" id="Properties"></a>
@@ -10749,7 +12159,7 @@ public readonly credentials: ISecret;
 
 - *Extends:* <a href="#appflow-cdk.IVertex">IVertex</a>
 
-- *Implemented By:* <a href="#appflow-cdk.EventBridgeDestination">EventBridgeDestination</a>, <a href="#appflow-cdk.RedshiftDestination">RedshiftDestination</a>, <a href="#appflow-cdk.S3Destination">S3Destination</a>, <a href="#appflow-cdk.SAPOdataDestination">SAPOdataDestination</a>, <a href="#appflow-cdk.SalesforceDestination">SalesforceDestination</a>, <a href="#appflow-cdk.IDestination">IDestination</a>
+- *Implemented By:* <a href="#appflow-cdk.EventBridgeDestination">EventBridgeDestination</a>, <a href="#appflow-cdk.RedshiftDestination">RedshiftDestination</a>, <a href="#appflow-cdk.S3Destination">S3Destination</a>, <a href="#appflow-cdk.SAPOdataDestination">SAPOdataDestination</a>, <a href="#appflow-cdk.SalesforceDestination">SalesforceDestination</a>, <a href="#appflow-cdk.SnowflakeDestination">SnowflakeDestination</a>, <a href="#appflow-cdk.IDestination">IDestination</a>
 
 A destination of an AppFlow flow.
 
@@ -10932,7 +12342,7 @@ public bind(flow: IFlow, source: ISource): TaskProperty[]
 
 - *Extends:* <a href="#appflow-cdk.IVertex">IVertex</a>
 
-- *Implemented By:* <a href="#appflow-cdk.MarketoSource">MarketoSource</a>, <a href="#appflow-cdk.S3Source">S3Source</a>, <a href="#appflow-cdk.SAPOdataSource">SAPOdataSource</a>, <a href="#appflow-cdk.SalesforceMarketingCloudSource">SalesforceMarketingCloudSource</a>, <a href="#appflow-cdk.SalesforceSource">SalesforceSource</a>, <a href="#appflow-cdk.ServiceNowSource">ServiceNowSource</a>, <a href="#appflow-cdk.SlackSource">SlackSource</a>, <a href="#appflow-cdk.ZendeskSource">ZendeskSource</a>, <a href="#appflow-cdk.ISource">ISource</a>
+- *Implemented By:* <a href="#appflow-cdk.GoogleAnalytics4Source">GoogleAnalytics4Source</a>, <a href="#appflow-cdk.MarketoSource">MarketoSource</a>, <a href="#appflow-cdk.S3Source">S3Source</a>, <a href="#appflow-cdk.SAPOdataSource">SAPOdataSource</a>, <a href="#appflow-cdk.SalesforceMarketingCloudSource">SalesforceMarketingCloudSource</a>, <a href="#appflow-cdk.SalesforceSource">SalesforceSource</a>, <a href="#appflow-cdk.ServiceNowSource">ServiceNowSource</a>, <a href="#appflow-cdk.SlackSource">SlackSource</a>, <a href="#appflow-cdk.ZendeskSource">ZendeskSource</a>, <a href="#appflow-cdk.ISource">ISource</a>
 
 A source of an AppFlow flow.
 
@@ -11031,7 +12441,7 @@ A representation of a validation operation, that is an operation testing records
 
 ### IVertex <a name="IVertex" id="appflow-cdk.IVertex"></a>
 
-- *Implemented By:* <a href="#appflow-cdk.EventBridgeDestination">EventBridgeDestination</a>, <a href="#appflow-cdk.MarketoSource">MarketoSource</a>, <a href="#appflow-cdk.RedshiftDestination">RedshiftDestination</a>, <a href="#appflow-cdk.S3Destination">S3Destination</a>, <a href="#appflow-cdk.S3Source">S3Source</a>, <a href="#appflow-cdk.SAPOdataDestination">SAPOdataDestination</a>, <a href="#appflow-cdk.SAPOdataSource">SAPOdataSource</a>, <a href="#appflow-cdk.SalesforceDestination">SalesforceDestination</a>, <a href="#appflow-cdk.SalesforceMarketingCloudSource">SalesforceMarketingCloudSource</a>, <a href="#appflow-cdk.SalesforceSource">SalesforceSource</a>, <a href="#appflow-cdk.ServiceNowSource">ServiceNowSource</a>, <a href="#appflow-cdk.SlackSource">SlackSource</a>, <a href="#appflow-cdk.ZendeskSource">ZendeskSource</a>, <a href="#appflow-cdk.IDestination">IDestination</a>, <a href="#appflow-cdk.ISource">ISource</a>, <a href="#appflow-cdk.IVertex">IVertex</a>
+- *Implemented By:* <a href="#appflow-cdk.EventBridgeDestination">EventBridgeDestination</a>, <a href="#appflow-cdk.GoogleAnalytics4Source">GoogleAnalytics4Source</a>, <a href="#appflow-cdk.MarketoSource">MarketoSource</a>, <a href="#appflow-cdk.RedshiftDestination">RedshiftDestination</a>, <a href="#appflow-cdk.S3Destination">S3Destination</a>, <a href="#appflow-cdk.S3Source">S3Source</a>, <a href="#appflow-cdk.SAPOdataDestination">SAPOdataDestination</a>, <a href="#appflow-cdk.SAPOdataSource">SAPOdataSource</a>, <a href="#appflow-cdk.SalesforceDestination">SalesforceDestination</a>, <a href="#appflow-cdk.SalesforceMarketingCloudSource">SalesforceMarketingCloudSource</a>, <a href="#appflow-cdk.SalesforceSource">SalesforceSource</a>, <a href="#appflow-cdk.ServiceNowSource">ServiceNowSource</a>, <a href="#appflow-cdk.SlackSource">SlackSource</a>, <a href="#appflow-cdk.SnowflakeDestination">SnowflakeDestination</a>, <a href="#appflow-cdk.ZendeskSource">ZendeskSource</a>, <a href="#appflow-cdk.IDestination">IDestination</a>, <a href="#appflow-cdk.ISource">ISource</a>, <a href="#appflow-cdk.IVertex">IVertex</a>
 
 An interface representing a vertex, i.e. a source or a destination of an AppFlow flow.
 
@@ -11156,6 +12566,21 @@ The AppFlow type of the connector that this source is implemented for.
 
 
 ##### `SCHEDULED` <a name="SCHEDULED" id="appflow-cdk.FlowType.SCHEDULED"></a>
+
+---
+
+
+### GoogleAnalytics4ApiVersion <a name="GoogleAnalytics4ApiVersion" id="appflow-cdk.GoogleAnalytics4ApiVersion"></a>
+
+#### Members <a name="Members" id="Members"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#appflow-cdk.GoogleAnalytics4ApiVersion.V1BETA">V1BETA</a></code> | *No description.* |
+
+---
+
+##### `V1BETA` <a name="V1BETA" id="appflow-cdk.GoogleAnalytics4ApiVersion.V1BETA"></a>
 
 ---
 

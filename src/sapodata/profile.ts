@@ -14,13 +14,13 @@ export interface SAPOdataBasicSettings {
 }
 
 export interface SAPOdataOauthRefreshTokenGrantFlowSettings {
-  readonly accessToken?: string;
   readonly refreshToken?: string;
   readonly clientId: string;
   readonly clientSecret: string;
 }
 
 export interface SAPOdataOAuthSettings {
+  readonly accessToken?: string;
   readonly refreshToken: SAPOdataOauthRefreshTokenGrantFlowSettings;
 }
 
@@ -65,7 +65,7 @@ export class SAPOdataConnectorProfile extends ConnectorProfileBase {
       };
     } else if (credentials.oAuth) {
       sapOdata.oAuthCredentials = {
-        accessToken: credentials.oAuth.refreshToken.accessToken,
+        accessToken: credentials.oAuth.accessToken,
         refreshToken: credentials.oAuth.refreshToken.refreshToken,
         clientId: credentials.oAuth.refreshToken.clientId,
         clientSecret: credentials.oAuth.refreshToken.clientSecret,

@@ -22,6 +22,8 @@ dist
 tsconfig.tsbuildinfo
 /.eslintrc.json
 !.jsii
+test/integ/ondemand-googleanalytics4-to-s3.integ.snapshot
+test/integ/ondemand-googleanalytics4-to-snowflake.integ.snapshot
 test/integ/ondemand-salesforce-to-redshift.integ.snapshot
 test/integ/ondemand-salesforce-to-s3.integ.snapshot
 test/integ/ondemand-sapodata-to-s3.integ.snapshot

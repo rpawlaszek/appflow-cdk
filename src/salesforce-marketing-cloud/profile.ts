@@ -11,14 +11,19 @@ export interface SalesforceMarketingCloudConnectorProfileProps extends Connector
 }
 
 export interface SalesforceMarketingCloudOAuthRefreshTokenGrantFlowSettings {
-  readonly accessToken?: string;
+  // TODO: make sure this is right. It should be most likely not allowed to be undefined
   readonly refreshToken?: string;
-  readonly clientSecret?: string;
-  readonly clientId?: string;
+  readonly clientSecret: string;
+  readonly clientId: string;
+}
+
+export interface SalesforceMarketingCloudOAuthFlows {
+  readonly refreshTokenGrant: SalesforceMarketingCloudOAuthRefreshTokenGrantFlowSettings;
 }
 
 export interface SalesforceMarketingCloudOAuthSettings {
-  readonly refreshToken: SalesforceMarketingCloudOAuthRefreshTokenGrantFlowSettings;
+  readonly accessToken?: string;
+  readonly flows?: SalesforceMarketingCloudOAuthFlows;
 }
 
 export interface SalesforceMarketingCloudConnectorCredentials {
@@ -52,7 +57,7 @@ export class SalesforceMarketingCloudConnectorProfile extends ConnectorProfileBa
       customConnector: {
         oAuth2Properties: {
           // TODO: make sure this works
-          oAuth2GrantType: properties.credentials.oAuth.refreshToken
+          oAuth2GrantType: properties.credentials.oAuth.flows?.refreshTokenGrant
             ? OAuthGrantType.CLIENT_CREDENTIALS
             : OAuthGrantType.AUTHORIZATION_CODE,
           tokenUrl: properties.properties.tokenUrl,
@@ -73,10 +78,10 @@ export class SalesforceMarketingCloudConnectorProfile extends ConnectorProfileBa
     return {
       customConnector: {
         oauth2: {
-          accessToken: properties.credentials.oAuth.refreshToken.accessToken,
-          refreshToken: properties.credentials.oAuth.refreshToken.refreshToken,
-          clientId: properties.credentials.oAuth.refreshToken.clientId,
-          clientSecret: properties.credentials.oAuth.refreshToken.clientSecret,
+          accessToken: properties.credentials.oAuth.accessToken,
+          refreshToken: properties.credentials.oAuth.flows?.refreshTokenGrant.refreshToken,
+          clientId: properties.credentials.oAuth.flows?.refreshTokenGrant.clientId,
+          clientSecret: properties.credentials.oAuth.flows?.refreshTokenGrant.clientSecret,
         },
         authenticationType: ConnectorAuthenticationType.OAUTH2,
       },
